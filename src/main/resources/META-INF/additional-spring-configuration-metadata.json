@@ -1,0 +1,24 @@
+{
+    "properties": [
+      {
+        "name": "rental.minimum-rent-days",
+        "type": "java.lang.Integer",
+        "description": "A minimum rent days amount. Attempting to rent less than this amount of days will be rejected."
+      },
+      {
+        "name": "rental.maximum-rent-days",
+        "type": "java.lang.Integer",
+        "description": "A maximum rent days amount. Attempting to rent more than this amount of days will be rejected."
+      },
+      {
+        "name": "rental.minimum-discount-percent",
+        "type": "java.lang.Integer",
+        "description": "The minimum valid discount. Discounts below 0 or this number will be rejected."
+      },
+      {
+        "name": "rental.maximum-discount-percent",
+        "type": "java.lang.Integer",
+        "description": "The maximum discount that can be applied to a rental. Discounts above 100% will be rejected."
+      }
+    ]
+  }
