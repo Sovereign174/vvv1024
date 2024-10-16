@@ -127,7 +127,7 @@ public class RentalService {
         BigDecimal preDiscountCharge = BigDecimal.ZERO;
 
         //calculalate basic weekdays/weekends since we know how many there are in any 7 day span
-        if(request.getRentDayCount() > DAYS_IN_WEEK) {
+        if(request.getRentDayCount() >= DAYS_IN_WEEK) {
             int numWeeks = request.getRentDayCount() / DAYS_IN_WEEK;
 
             numWeekdays = numWeeks * WEEKDAYS_IN_WEEK;
